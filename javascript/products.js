@@ -1,8 +1,8 @@
 async function fetchData() {
-	let productRes = await fetch('../data/products.json');
+	let productRes = await fetch('./data/products.json');
 	let productsStr = await productRes.json();
 
-	let categoryRes = await fetch('../data/categories.json');
+	let categoryRes = await fetch('./data/categories.json');
 	let categoryStr = await categoryRes.json();
 
 	return [JSON.parse(productsStr), JSON.parse(categoryStr)];
@@ -329,7 +329,7 @@ class CartDOM {
                                 </div>
 
                                 <img
-                                    src="../images/trash.svg"
+                                    src="./images/trash.svg"
                                     alt="trash"
                                     class="cart__product__trash"
                                     data-id="${item.product.id}"

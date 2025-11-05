@@ -1,14 +1,14 @@
 const data = [
 	{
-		img: '../images/slider-1.png',
+		img: './images/slider-1.png',
 		url: '!#',
 	},
 	{
-		img: '../images/slider-2.png',
+		img: './images/slider-2.png',
 		url: '!#',
 	},
 	{
-		img: '../images/slider-3.png',
+		img: './images/slider-3.png',
 		url: '!#',
 	},
 ];
@@ -72,10 +72,10 @@ class Carousel {
 		});
 
 		[btnPrev, btnNext].forEach((btn) => {
-			btn.addEventListener("mousedown", stopCarousel);
-			btn.addEventListener("mouseup", startCarousel);
-			btn.addEventListener("mouseout", startCarousel);
-		})
+			btn.addEventListener('mousedown', stopCarousel);
+			btn.addEventListener('mouseup', startCarousel);
+			btn.addEventListener('mouseout', startCarousel);
+		});
 	}
 
 	changeSlide(direction) {
